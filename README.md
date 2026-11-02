@@ -1,8 +1,5 @@
 ## 📸 Screenshots
 
-![Input form](screenshot-form.png)_
-
-![Results page](screenshot-results.png)
 <img width="1037" height="782" alt="Screenshot 2026-11-02 at 9 01 16 PM" src="https://github.com/user-attachments/assets/6f76cb72-5695-48e7-92d4-c7f81ec4074d" />
 
 
