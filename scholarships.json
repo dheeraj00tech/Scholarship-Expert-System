@@ -1,0 +1,102 @@
+{
+  "_note": "Sample knowledge base for demonstration. Criteria are illustrative; verify against official portals (scholarships.gov.in, state portals) before real use.",
+  "scholarships": [
+    {
+      "name": "Post-Matric Scholarship for SC Students",
+      "provider": "Central Government (NSP)",
+      "benefit": "Course fee reimbursement + maintenance allowance",
+      "priority": 3,
+      "rules": [
+        {"field": "category", "op": "in", "value": ["SC"], "label": "Belongs to SC category"},
+        {"field": "income", "op": "<=", "value": 250000, "label": "Family income up to Rs 2.5 lakh"},
+        {"field": "level", "op": "in", "value": ["Undergraduate", "Postgraduate"], "label": "Studying at post-matric level"}
+      ]
+    },
+    {
+      "name": "Post-Matric Scholarship for ST Students",
+      "provider": "Central Government (NSP)",
+      "benefit": "Course fee reimbursement + maintenance allowance",
+      "priority": 3,
+      "rules": [
+        {"field": "category", "op": "in", "value": ["ST"], "label": "Belongs to ST category"},
+        {"field": "income", "op": "<=", "value": 250000, "label": "Family income up to Rs 2.5 lakh"},
+        {"field": "level", "op": "in", "value": ["Undergraduate", "Postgraduate"], "label": "Studying at post-matric level"}
+      ]
+    },
+    {
+      "name": "Post-Matric Scholarship for OBC Students",
+      "provider": "Central / State Government",
+      "benefit": "Partial fee support + allowance",
+      "priority": 2,
+      "rules": [
+        {"field": "category", "op": "in", "value": ["OBC"], "label": "Belongs to OBC category"},
+        {"field": "income", "op": "<=", "value": 100000, "label": "Family income up to Rs 1 lakh"},
+        {"field": "cgpa", "op": ">=", "value": 6.0, "label": "CGPA at least 6.0"}
+      ]
+    },
+    {
+      "name": "Central Sector Merit-cum-Means Scholarship",
+      "provider": "Central Government (NSP)",
+      "benefit": "Annual merit-based financial support",
+      "priority": 3,
+      "rules": [
+        {"field": "income", "op": "<=", "value": 450000, "label": "Family income up to Rs 4.5 lakh"},
+        {"field": "cgpa", "op": ">=", "value": 8.0, "label": "CGPA at least 8.0"},
+        {"field": "level", "op": "in", "value": ["Undergraduate", "Postgraduate"], "label": "Studying at college level"}
+      ]
+    },
+    {
+      "name": "Girl Child Higher Education Support",
+      "provider": "State / Institutional (sample)",
+      "benefit": "Tuition waiver (partial)",
+      "priority": 2,
+      "rules": [
+        {"field": "gender", "op": "in", "value": ["Female"], "label": "Female student"},
+        {"field": "income", "op": "<=", "value": 600000, "label": "Family income up to Rs 6 lakh"},
+        {"field": "cgpa", "op": ">=", "value": 6.5, "label": "CGPA at least 6.5"}
+      ]
+    },
+    {
+      "name": "Scholarship for Students with Disabilities",
+      "provider": "Central Government (sample)",
+      "benefit": "Fee support + assistive allowance",
+      "priority": 3,
+      "rules": [
+        {"field": "disability", "op": "==", "value": true, "label": "Has a disability (40% or more)"},
+        {"field": "income", "op": "<=", "value": 800000, "label": "Family income up to Rs 8 lakh"}
+      ]
+    },
+    {
+      "name": "EWS / General Means-based Scholarship",
+      "provider": "Institutional (sample)",
+      "benefit": "Partial tuition waiver",
+      "priority": 1,
+      "rules": [
+        {"field": "category", "op": "in", "value": ["General", "EWS"], "label": "General or EWS category"},
+        {"field": "income", "op": "<=", "value": 300000, "label": "Family income up to Rs 3 lakh"},
+        {"field": "cgpa", "op": ">=", "value": 7.0, "label": "CGPA at least 7.0"}
+      ]
+    },
+    {
+      "name": "Himachal Pradesh Domicile Merit Scholarship",
+      "provider": "State Government (sample)",
+      "benefit": "Merit award for state students",
+      "priority": 2,
+      "rules": [
+        {"field": "state", "op": "in", "value": ["Himachal Pradesh"], "label": "Domicile of Himachal Pradesh"},
+        {"field": "cgpa", "op": ">=", "value": 7.5, "label": "CGPA at least 7.5"},
+        {"field": "income", "op": "<=", "value": 500000, "label": "Family income up to Rs 5 lakh"}
+      ]
+    },
+    {
+      "name": "Technical Education Excellence Award",
+      "provider": "Institutional (sample)",
+      "benefit": "Cash award + certificate",
+      "priority": 1,
+      "rules": [
+        {"field": "course", "op": "in", "value": ["B.Tech / Engineering"], "label": "Enrolled in engineering"},
+        {"field": "cgpa", "op": ">=", "value": 9.0, "label": "CGPA at least 9.0"}
+      ]
+    }
+  ]
+}
