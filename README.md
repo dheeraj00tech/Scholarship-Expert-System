@@ -70,49 +70,8 @@ Scholarship-Expert-System/
 └── README.md           # This file
 ```
 
-## ▶️ How to Run on Your Own Computer
 
-**1. Clone or download the project**
-```
-git clone https://github.com/dheeraj00tech/Scholarship-Expert-System.git
-cd Scholarship-Expert-System
-```
 
-**2. Install Streamlit**
-```
-python3 -m pip install streamlit
-```
-
-**3. Run the web app**
-```
-python3 -m streamlit run app.py
-```
-The app opens in your browser at `http://localhost:8501`.
-
-**Prefer the terminal?** Run `python3 cli.py` instead (no Streamlit needed).
-
-> On Windows, use `python` or `py` instead of `python3`.
-
-## ➕ How to Add a New Scholarship
-
-Open `scholarships.json` and add a new block like this. No code changes are needed.
-
-```json
-{
-  "name": "My New Scholarship",
-  "provider": "Provider Name",
-  "benefit": "What the student gets",
-  "priority": 2,
-  "rules": [
-    {"field": "income", "op": "<=", "value": 300000, "label": "Family income up to Rs 3 lakh"},
-    {"field": "cgpa", "op": ">=", "value": 7.0, "label": "CGPA at least 7.0"}
-  ]
-}
-```
-
-**Supported operators:** `in`, `==`, `<=`, `>=`
-
-**Available fields:** `category`, `gender`, `state`, `income`, `cgpa`, `level`, `course`, `disability`
 
 ## 🛠️ Technologies Used
 
